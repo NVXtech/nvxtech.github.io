@@ -1,4 +1,14 @@
-baseURL = 'http://nvxtech.github.io/'
+baseURL = 'http://nvxtech.com.br/'
 languageCode = 'pt-br'
 title = 'NVX tech'
 theme = 'nvx'
+
+[menu]
+[[menu.main]]
+    name = 'Sobre'
+    url = '/'
+    weight = 1
+[[menu.main]]
+    name = 'Contato'
+    url = '/contact'
+    weight = 2
