@@ -1,7 +1,10 @@
-baseURL = 'http://nvxtech.com.br/'
+baseURL = 'http://nvxtech.github.io/'
 languageCode = 'pt-br'
 title = 'NVX tech'
 theme = 'nvx'
+description = ''
+homepage = 'http://nvxtech.github.io/'
+tags = []
 
 [menu]
 [[menu.main]]
@@ -9,6 +12,10 @@ theme = 'nvx'
     url = '/'
     weight = 1
 [[menu.main]]
+    name = 'Produtos'
+    url = '/#products'
+    weight = 3
+[[menu.main]]
     name = 'Contato'
     url = '/contact'
-    weight = 2
+    weight = 10
