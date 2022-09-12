@@ -1,0 +1,4 @@
+baseURL = 'http://nvxtech.github.io/'
+languageCode = 'pt-br'
+title = 'NVX tech'
+theme = 'nvx'
