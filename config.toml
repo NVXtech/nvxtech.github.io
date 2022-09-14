@@ -5,6 +5,8 @@ theme = 'nvx'
 description = ''
 homepage = 'http://nvxtech.github.io/'
 tags = []
+enableRobotsTxt = true
+
 
 [menu]
 [[menu.main]]
