@@ -1,9 +1,9 @@
-baseURL = 'http://nvxtech.github.io/'
+baseURL = 'http://www.nvxtech.com.br/'
 languageCode = 'pt-br'
 title = 'NVX tech'
 theme = 'nvx'
 description = ''
-homepage = 'http://nvxtech.github.io/'
+homepage = 'http://www.nvxtech.com.br/'
 tags = []
 enableRobotsTxt = true
 
