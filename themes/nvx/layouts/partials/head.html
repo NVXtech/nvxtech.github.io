@@ -1,31 +1,32 @@
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{- if .IsHome -}}
-        <meta name="description" content="{{ site.Params.Description }}" />
+    <meta name="description" content="{{ site.Params.Description }}" />
     {{- else -}}
-        <meta name="description" content="{{ .Params.Description }}" />
+    <meta name="description" content="{{ .Params.Description }}" />
     {{- end }}
+    <meta property="og:image" content="www.nvxtech.com.br/nvxtech.png">
     <title>
         {{- if .IsHome -}}
-            Home | {{ .Site.Title }}
+        Home | {{ .Site.Title }}
         {{- else if .Params.hide_site_title -}}
-            {{ .Page.Title }}
+        {{ .Page.Title }}
         {{- else if .Page.Title -}}
-            {{ .Page.Title }} | {{ .Site.Title }}
+        {{ .Page.Title }} | {{ .Site.Title }}
         {{- else -}}
-            {{ .Site.Title }}
-      {{- end -}}
+        {{ .Site.Title }}
+        {{- end -}}
     </title>
     {{- if isset .Params "canonical" -}}
-        <link rel="canonical" href="{{ .Params.canonical }}" />
+    <link rel="canonical" href="{{ .Params.canonical }}" />
     {{- else -}}
-        <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
     {{- end }}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    {{ $style := resources.Get "style.css" }}    
-    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
-    
+    {{ $style := resources.Get "style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
 </head>
