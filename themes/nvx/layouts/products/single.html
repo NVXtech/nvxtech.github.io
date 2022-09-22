@@ -31,12 +31,22 @@
 
 {{ end }}
 {{ define "main" }}
-<section class="text-gray-600 body-font relative">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">{{.Title}}</h1>
+<div class="flex flex-col px-5 py-5 items-center">
+    <div class="flex sm:flex-row flex-col-reverse py-2">
+        <div class="w-full lg:max-w-lg text-center">
+            <img class="object-cover object-center rounded" src="/{{ .Params.image_url }}">
         </div>
-        <div class="content prose md:prose-lg lg:prose-xl max-w-none py-1">{{.Content}}</div>
+        <div
+            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left justify-center items-center text-center px-5">
+            <h1 class="title-font sm:text-4xl text-3xl lg:text-5xl mb-4 font-medium text-gray-900">
+                {{.Title}}
+            </h1>
+            <p class="mb-8 leading-relaxed lg:text-xl">
+                {{ .Params.description }}
+            </p>
+        </div>
     </div>
-</section>
+    <div class="prose md:prose-lg lg:prose-xl max-w-none py-1">{{.Content}}</div>
+</div>
+
 {{ end }}

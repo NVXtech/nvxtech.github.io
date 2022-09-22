@@ -3,7 +3,8 @@
 <section class="mx-auto">
   <div class="flex flex-col px-5 py-5 items-center">
     <div class="flex sm:flex-row flex-col py-2">
-      <div class="flex flex-col lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16  md:items-start md:text-left md:mb-0 items-center text-center">
+      <div
+        class="flex flex-col lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16  md:items-start md:text-left md:mb-0 items-center text-center">
         <h1 class="title-font sm:text-4xl text-3xl lg:text-5xl mb-4 font-medium text-gray-900">
           Tecnologia para alcançar a sustentabilidade
         </h1>
@@ -19,14 +20,15 @@
       <div class="w-full lg:max-w-lg">
         <img class="object-cover object-center rounded" src="/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg">
       </div>
-      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center px-5">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center px-5">
         <h1 class="title-font sm:text-4xl text-3xl lg:text-5xl mb-4 font-medium text-gray-900">
           Simplificando para escalar
         </h1>
         <p class="mb-8 leading-relaxed lg:text-xl">
           Transformamos ciência e tecnologia de alto nível na área ambiental em soluções simples de usar e escaláveis
         </p>
-      </div>  
+      </div>
     </div>
   </div>
   <div class="px-5 mx-auto">
@@ -35,7 +37,8 @@
         <div class="w-24 h-full bg-green-500"></div>
       </div>
       <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1 id="products" class="sm:w-2/5 text-gray-900 font-medium title-font sm:text-4xl text-3xl lg:text-5xl mb-2 sm:mb-0">
+        <h1 id="products"
+          class="sm:w-2/5 text-gray-900 font-medium title-font sm:text-4xl text-3xl lg:text-5xl mb-2 sm:mb-0">
           Soluções que impactam</h1>
         <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0 lg:text-xl">
           Buscamos de forma criativa entregar resultados ambientais mensuráveis e economicamente viáveis.
@@ -50,10 +53,12 @@
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">{{ .Title }}</h2>
         <p class="leading-relaxed text-base">{{ .Params.description }}</p>
-        <button
-          class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">
-          Saiba mais
-        </button>
+        <div class="flex justify-center ">
+          <a role="button" href="{{ .Permalink }}"
+            class="my-5 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">
+            Saiba mais
+          </a>
+        </div>
       </div>
       {{ end }}
     </div>
